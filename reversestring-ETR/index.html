@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 420px;
+            background-color: #ffffff;
+            padding: 32px;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+            color: #1f2937;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #d1d5db;
+            border-radius: 14px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+        }
+
+        button {
+            width: 100%;
+            margin-top: 16px;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 14px;
+            background-color: #6366f1;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: #4f46e5;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .result {
+            margin-top: 24px;
+            padding: 16px;
+            min-height: 54px;
+            background-color: #f3f4f6;
+            border-radius: 14px;
+            color: #111827;
+            font-size: 18px;
+            word-break: break-word;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Reverse String</h1>
+
+        <input 
+            type="text" 
+            id="textInput" 
+            placeholder="Introduce un texto"
+        >
+
+        <button id="reverseButton">
+            Invertir texto
+        </button>
+
+        <div id="result" class="result"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
